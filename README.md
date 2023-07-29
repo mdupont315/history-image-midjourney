@@ -1,5 +1,4 @@
-# midjourney-ui
-
+# history-image-midjourney
 Midjourney UI is an open source txt2img UI for AI draw
 
 ## Deploy
