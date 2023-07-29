@@ -77,7 +77,7 @@ export default function Main(children: JSX.Element) {
         actionsRender={(props) => {
           if (props.isMobile) return [];
           return [
-            <Link href="https://github.com/erictik/midjourney-ui" key="about">
+            <Link href="https://github.com/Senguly/history-image-midjourney" key="about">
              <GithubFilled  style={{
               fontSize: 24,
              }}/>

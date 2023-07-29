@@ -1,7 +1,7 @@
 {
-  "name": "midjourney-ui",
+  "name": "history-image-midjourney",
   "version": "1.0.0",
-  "description": "midjourney-ui",
+  "description": "history-image-midjourney",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -56,14 +56,5 @@
     "midjourney-api",
     "midjourney"
   ],
-  "author": "Eric Yang <yanghao@10d.xin>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/erictik/midjourney-ui.git"
-  },
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/erictik/midjourney-ui/issues"
-  },
-  "homepage": "https://github.com/erictik/midjourney-ui#readme"
 }
