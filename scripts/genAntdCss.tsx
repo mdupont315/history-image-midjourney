@@ -4,12 +4,6 @@ import withTheme from "../theme";
 
 const outputPath = "./public/antd.min.css";
 
-// 1. default theme
-
-// const css = extractStyle();
-
-// 2. With custom theme
-
 const css = extractStyle(withTheme);
 
 fs.writeFileSync(outputPath, css);
