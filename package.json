@@ -1,0 +1,69 @@
+{
+  "name": "midjourney-ui",
+  "version": "1.0.0",
+  "description": "midjourney-ui",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "build next build",
+    "start": "start next start",
+    "lint": "next lint",
+    "predev": "ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx",
+    "prebuild": "cross-env NODE_ENV=production ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx"
+  },
+  "devDependencies": {
+    "@ant-design/cssinjs": "^1.3.0",
+    "@ant-design/static-style-extract": "~1.0.1",
+    "@types/marked": "^4.0.8",
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "antd": "^5.1.0",
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "edge-runtime": "^2.3.0",
+    "eslint": "^8.30.0",
+    "eslint-config-next": "^13.1.1",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@ant-design/pro-components": "^2.4.9",
+    "@ant-design/pro-layout": "^7.10.3",
+    "@vercel/analytics": "^1.0.1",
+    "axios": "^1.4.0",
+    "buffer": "^6.0.3",
+    "discord.js": "^14.5.0",
+    "eventsource-parser": "^1.0.0",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "graceful-fs": "^4.2.11",
+    "midjourney": "^2.7.77",
+    "next": "^13.4.4",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
+    "stream-browserify": "^3.0.0",
+    "timers-promise": "^1.0.0",
+    "url": "^0.11.1"
+  },
+  "keywords": [
+    "midjourney-api",
+    "midjourney"
+  ],
+  "author": "Eric Yang <yanghao@10d.xin>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erictik/midjourney-ui.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erictik/midjourney-ui/issues"
+  },
+  "homepage": "https://github.com/erictik/midjourney-ui#readme"
+}
