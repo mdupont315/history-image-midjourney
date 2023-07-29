@@ -50,6 +50,6 @@ app.post(`/api/image`, async (req, res) => {
 app.listen(3001, () => {
     console.clear();
     console.log(`Server is running @ http://localhost:3001}`);
-    client.login('MTA0ODYzMjcxNTA4NTM1MzA1MA.G0xH1D.vU_r7OdwhrWGYzBilkM7-GgoLWN6lhDQMkR_SU');
+    client.login(progress.env.key);
 });
 
