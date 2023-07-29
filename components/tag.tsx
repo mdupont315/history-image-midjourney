@@ -10,13 +10,11 @@ interface Props {
 
 const App = ({ Data, onClick }: Props) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  // const tagsData = ["V1", "V2", "V3", "V4"];
   const handleChange = (tag: string, checked: boolean) => {
     if (!checked) return;
     const nextSelectedTags = checked
       ? [...selectedTags, tag]
       : selectedTags.filter((t) => t !== tag);
-    console.log("You are interested in: ", nextSelectedTags);
     onClick && onClick(tag);
     setSelectedTags(nextSelectedTags);
   };
