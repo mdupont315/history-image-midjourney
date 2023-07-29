@@ -11,8 +11,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ setImage, setImageFile, handl
   
   const [selectedFile, setSelectedFile] = useState<File>();
 
-  console.log("here")
-  useEffect(() => {
+   useEffect(() => {
     const uploadbtn = document.getElementById('fileUploadbtn') as HTMLButtonElement | null;
   const generatebtn = document.getElementById('fileGeneratebtn') as HTMLButtonElement | null;
   uploadbtn?.setAttribute('disabled', '');
@@ -26,9 +25,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ setImage, setImageFile, handl
     const generatebtn = document.getElementById('fileGeneratebtn') as HTMLButtonElement | null;
     uploadbtn?.removeAttribute('disabled');
     generatebtn?.removeAttribute('disabled');
-    console.log(uploadbtn)
     if (event.target.files && event.target.files[0]) {
-      console.log(event.target.files[0])
       await setImageFile(event.target.files[0])
       await setSelectedFile(event.target.files[0]);
     }
